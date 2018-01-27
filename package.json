@@ -16,7 +16,14 @@
   "bugs": {
     "url": "https://github.com/Kikobeats/url-code-status/issues"
   },
-  "keywords": [],
+  "keywords": [
+    "code",
+    "dns",
+    "error",
+    "http",
+    "status",
+    "url"
+  ],
   "dependencies": {
     "dnserrors": "~2.1.2",
     "got": "~8.0.3",

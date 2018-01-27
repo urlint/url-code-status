@@ -33,10 +33,6 @@ See more [examples](/examples).
 
 ## API
 
-### .constructor([options])
-
-Create a new instance specifing [browserless launch options](https://github.com/Kikobeats/browserless#constructoropts).
-
 ### urlCodeStatus(url, [options])
 
 #### url
@@ -48,7 +44,7 @@ The target URL.
 
 #### options
 
-Use it for providing [got#options](https://github.com/sindresorhus/got#goturl-options) & [page#goto](https://github.com/GoogleChrome/puppeteer/blob/master/docs/api.md#pagegotourl-options) options.
+Use it for providing [got#options](https://github.com/sindresorhus/got#goturl-options).
 
 ## License
 
