@@ -1,5 +1,7 @@
 # url-code-status
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/urlint/url-code-status.svg)](https://greenkeeper.io/)
+
 ![Last version](https://img.shields.io/github/tag/urlint/url-code-status.svg?style=flat-square)
 [![Build Status](https://img.shields.io/travis/urlint/url-code-status/master.svg?style=flat-square)](https://travis-ci.org/urlint/url-code-status)
 [![Coverage Status](https://img.shields.io/coveralls/urlint/url-code-status.svg?style=flat-square)](https://coveralls.io/github/urlint/url-code-status)
