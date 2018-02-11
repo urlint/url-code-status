@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "dnserrors": "~2.1.2",
-    "got": "~8.0.3",
+    "got": "~8.1.0",
     "p-any": "~1.1.0"
   },
   "devDependencies": {
