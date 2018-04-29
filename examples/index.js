@@ -1,6 +1,6 @@
 'use strict'
 
-const urlStatusCode = require('..')()
+const urlStatusCode = require('..')
 
 const url = process.argv[2]
 ;(async () => {
