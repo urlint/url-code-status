@@ -2,7 +2,7 @@
   "name": "url-code-status",
   "description": "Smart way to get the HTTP status code of an url",
   "homepage": "https://documentup.com/Kikobeats/url-code-status",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": {
     "email": "josefrancisco.verdu@gmail.com",
