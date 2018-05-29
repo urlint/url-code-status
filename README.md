@@ -8,7 +8,7 @@
 [![NPM Status](https://img.shields.io/npm/dm/url-code-status.svg?style=flat-square)](https://www.npmjs.org/package/url-code-status)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
-> Smart way to get the HTTP status code of an url.
+> Smart way to get the HTTP status code associated to any URL.
 
 ## Install
 
@@ -19,13 +19,10 @@ $ npm install url-code-status --save
 ## Usage
 
 ```js
-const getStatusCode = require('..')()
-
-const url = process.argv[2]
-
 ;(async () => {
-  const status = await getStatusCode(url)
-  console.log(status)
+  const urlCodeStatus = require('urlCodeStatus')
+  const statusCode = await urlCodeStatus('https://kikobeats.com')
+  // => 200
 })()
 ```
 

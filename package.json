@@ -1,6 +1,6 @@
 {
   "name": "url-code-status",
-  "description": "Smart way to get the HTTP status code of an url",
+  "description": "Smart way to get the HTTP status code associated to any URL.",
   "homepage": "https://documentup.com/Kikobeats/url-code-status",
   "version": "1.0.1",
   "main": "index.js",
@@ -26,8 +26,7 @@
   ],
   "dependencies": {
     "dnserrors": "~2.1.2",
-    "got": "~8.3.0",
-    "p-any": "~1.1.0"
+    "reachable-url": "~1.0.0"
   },
   "devDependencies": {
     "ava": "latest",

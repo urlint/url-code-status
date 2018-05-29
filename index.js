@@ -1,28 +1,16 @@
 'use strict'
 
-const pAny = require('p-any')
-const got = require('got')
+const reachableUrl = require('reachable-url')
 const dnsErrors = require('dnserrors')
 
-const createFetch = method => async (url, opts) => {
-  const { statusCode } = await got[method](url, opts)
-  return statusCode
-}
-
-const getStatusFromHead = createFetch('head')
-const getStatusFromGet = createFetch('get')
-
-module.exports = async (url, opts = {}) => {
+module.exports = async (targetUrl, opts = {}) => {
   try {
-    const statusCode = await pAny([
-      getStatusFromHead(url, opts),
-      getStatusFromGet(url, opts)
-    ])
+    const res = await reachableUrl(targetUrl, opts)
+    const { statusCode } = res
     return statusCode
   } catch (aggregatedError) {
     const errors = Array.from(aggregatedError)
     const error = errors[errors.length - 1]
-    const dnsError = dnsErrors(error)
-    return error.statusCode || dnsError.statusCode || 500
+    return error.statusCode || dnsErrors(error).statusCode || 500
   }
 }
