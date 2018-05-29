@@ -1,3 +1,10 @@
+<a name="1.0.2"></a>
+## 1.0.2 (2018-05-29)
+
+* Simplify ([22a8106](https://github.com/Kikobeats/url-code-status/commit/22a8106))
+
+
+
 <a name="1.0.1"></a>
 ## 1.0.1 (2018-04-29)
 
